@@ -1,0 +1,123 @@
+.content-container {
+	display: grid;
+	grid-template-rows: auto auto;
+	position: relative;
+	background-color: #272727;
+	padding-top: 100px;
+	width: 100%;
+	z-index: -1;
+} 
+
+/* header section */
+
+header {
+	display: flex;
+	justify-content: center;
+}
+
+#heading {
+	margin: 0;
+	font-family: 'Montserrat', sans-serif;
+	color: white;
+}
+
+/*header section end */
+
+
+/* Content section */
+
+.films-container {
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	padding-top: 30px;
+}
+
+
+.film-grid {
+	display: grid;
+	justify-content: space-between;
+	grid-template-columns: repeat(5, 200px);
+	grid-auto-rows: 250px;
+	grid-row-gap: 20px;
+	width: 80%;
+}
+
+.film-item {
+	transition: 0.4s;
+
+}
+.film-item:hover {
+	cursor: pointer;
+	transform: scale(1.05);
+
+}
+
+.film-thumb {
+	height: 100%;
+	width: 100%;
+	border-radius: 5px 5px 0 0;
+	
+}
+
+
+.film-desc {
+	display: grid;
+	position: relative;
+	grid-template-rows: repeat(2, 50%);
+	grid-template-columns: repeat(3, 1fr);
+	height: 70px;
+	top: -73px;
+	box-shadow: inset -2px -75px 15px -20px rgba(0,0,0,0.80);
+
+}
+
+
+.film-name {
+	padding: 0 10px 0 10px;
+	grid-row: 1/2;
+	grid-column: 1/4;
+	text-align: center;
+	text-decoration: underline;
+	font-family: Roboto;
+	font-size: 18px;
+	color: white;
+	padding-top: 8px;
+	text-overflow: ellipsis;
+	overflow: hidden;
+	white-space: nowrap;
+	
+	
+}
+
+.film-tag {
+	padding: 10px 0 0 10px;
+	text-align: left;
+	font-family: Roboto;
+	font-size: 12px;
+	grid-column: 1/3;
+	grid-row: 2/3;
+	color: white;
+	text-overflow: ellipsis;
+	overflow: hidden;
+	white-space: nowrap;
+}
+
+.love-icon {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+
+}
+
+.love-icon img {
+	position: absolute;
+	width: 24px;
+	height: 24px;
+	transition: 0.2s
+}
+
+.love-icon img:hover {
+	height: 28px;
+	width: 28px;
+}

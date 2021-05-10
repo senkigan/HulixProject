@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<link rel="stylesheet" type="text/css" href="css/main.css">
+	<link rel="stylesheet" type="text/css" href="css/navbar.css">
+	<link rel="stylesheet" type="text/css" href="css/fonts.css">
+	<link rel="stylesheet" type="text/css" href="css/content.css">
+	<title>Hulix</title>
+</head>
+
+<body>
+	<header>
+		<nav class="navbar-container">
+			<div class="navbar-inner">
+				<h1 class="page-logo"><a href="#"><img height="44" src="img/logo.png"></a></h1>
+				<div class="login-section">
+					<button>Log In</button>
+					<button>Join Us</button>
+				</div>
+				<ul class="navbar-buttons">
+					<li><a class="navbar-button" href="#">HOME</a></li>
+					<li><a class="navbar-button" href="#">MY LIBRARY</a></li>
+					<li><a class="navbar-button" href="#">MY ACCOUNT</a></li>
+				</ul>
+			</div>
+		</nav>
+	</header>
+
+	<div class="content-container">
+		<header>
+			<h1 id="heading"></h1>
+		</header>
+		<div class="films-container">
+			<div class="film-grid">
+				<div class="film-item"><img class="film-thumb" src="img/films/avatar.jpg">
+					<div class="film-desc">
+						<div class="film-name">Avatar</div>
+						<div class="film-tag"><b>Tags</b>: Fantasy, Thriller</div>
+						<div class="love-icon"><img onclick="loved(this)" src="img/like.png"></div>
+					</div>
+				</div>
+				<div class="film-item"><img class="film-thumb" src="img/films/hotfuzz.jpg">
+					<div class="film-desc">
+						<div class="film-name">Hot Fuzz</div>
+						<div class="film-tag"><b>Tags</b>: Action, Thriller</div>
+						<div class="love-icon"><img onclick="loved(this)" src="img/like.png"></div>
+					</div>
+				</div>
+				<div class="film-item"><img class="film-thumb" src="img/films/matrix.png">
+					<div class="film-desc">
+						<div class="film-name">The Matrix</div>
+						<div class="film-tag"><b>Tags</b>: Action, Fantasy</div>
+						<div class="love-icon"><img onclick="loved(this)" src="img/like.png"></div>
+					</div>
+				</div>
+				<div class="film-item"><img class="film-thumb" src="img/films/jaws.jpg">
+					<div class="film-desc">
+						<div class="film-name">Jaws</div>
+						<div class="film-tag"><b>Tags</b>: Horror, Action</div>
+						<div class="love-icon"><img onclick="loved(this)" src="img/like.png"></div>
+					</div>
+				</div>
+				<div class="film-item"><img class="film-thumb" src="img/films/silenceoflabms.jpg">
+					<div class="film-desc">
+						<div class="film-name">Silence Of The Lambs</div>
+						<div class="film-tag"><b>Tags</b>: Horror, Thriller</div>
+						<div class="love-icon"><img onclick="loved(this)" src="img/like.png"></div>
+					</div>
+				</div>
+				<div class="film-item"><img class="film-thumb" src="img/films/thehobbit.jpg">
+					<div class="film-desc">
+						<div class="film-name">The Hobbit</div>
+						<div class="film-tag"><b>Tags</b>: Adventure, Fantasy</div>
+						<div class="love-icon"><img onclick="loved(this)" src="img/like.png"></div>
+					</div>
+				</div>
+				<div class="film-item"><img class="film-thumb" src="img/films/starwarstfa.jpg">
+					<div class="film-desc">
+						<div class="film-name">Star Wars: TFA</div>
+						<div class="film-tag"><b>Tags</b>: Action, Fantasy</div>
+						<div class="love-icon"><img onclick="loved(this)" src="img/like.png"></div>
+					</div>
+				</div>
+				<div class="film-item"><img class="film-thumb" src="img/films/kong.jpg">
+					<div class="film-desc">
+						<div class="film-name">Godzilla vs Kong</div>
+						<div class="film-tag"><b>Tags</b>: Action, Fantasy</div>
+						<div class="love-icon"><img onclick="loved(this)" src="img/like.png"></div>
+					</div>
+				</div>
+				<div class="film-item"><img class="film-thumb" src="img/films/mugentrain.jpg">
+					<div class="film-desc">
+						<div class="film-name">Demon Slayer: Mugen train</div>
+						<div class="film-tag"><b>Tags</b>: Anime, Fantasy</div>
+						<div class="love-icon"><img onclick="loved(this)" src="img/like.png"></div>
+					</div>
+				</div>
+				<div class="film-item"><img class="film-thumb" src="img/films/polter.jpg">
+					<div class="film-desc">
+						<div class="film-name">Poltergeist</div>
+						<div class="film-tag"><b>Tags</b>: Horror</div>
+						<div class="love-icon"><img onclick="loved(this)" src="img/like.png"></div>
+					</div>
+				</div>
+				<div class="film-item"><img class="film-thumb" src="img/films/cover.jpg">
+					<div class="film-desc">
+						<div class="film-name">Cover</div>
+						<div class="film-tag"><b>Tags</b>: Thriller, Psychological</div>
+						<div class="love-icon"><img onclick="loved(this)" src="img/like.png"></div>
+					</div>
+				</div>
+				<div class="film-item"><img class="film-thumb" src="img/films/howtotrain.jpg">
+					<div class="film-desc">
+						<div class="film-name">How To Train Your Dragon</div>
+						<div class="film-tag"><b>Tags</b>: Adventure, Fantasy</div>
+						<div class="love-icon"><img onclick="loved(this)" src="img/like.png"></div>
+					</div>
+				</div>
+				<div class="film-item"><img class="film-thumb" src="img/films/thejoker.jpg">
+					<div class="film-desc">
+						<div class="film-name">Tthe Joker</div>
+						<div class="film-tag"><b>Tags</b>: Action, Psychological</div>
+						<div class="love-icon"><img onclick="loved(this)" src="img/like.png"></div>
+					</div>
+				</div>
+				<div class="film-item"><img class="film-thumb" src="img/films/tla.jpg">
+					<div class="film-desc">
+						<div class="film-name">TLA: Book One</div>
+						<div class="film-tag"><b>Tags</b>: Fantasy, Animation</div>
+						<div class="love-icon"><img onclick="loved(this)" src="img/like.png"></div>
+					</div>
+				</div>
+				<div class="film-item"><img class="film-thumb" src="img/films/21jumpstreet.jpg">
+					<div class="film-desc">
+						<div class="film-name">21 Jump Street</div>
+						<div class="film-tag"><b>Tags</b>: Fantasy, Animation</div>
+						<div class="love-icon"><img onclick="loved(this)" src="img/like.png"></div>
+					</div>
+				</div>
+				<div class="film-item"><img class="film-thumb" src="img/films/21jumpstreet.jpg">
+					<div class="film-desc">
+						<div class="film-name">21 Jump Street</div>
+						<div class="film-tag"><b>Tags</b>: Fantasy, Animation</div>
+						<div class="love-icon"><img onclick="loved(this)" src="img/like.png"></div>
+					</div>
+				</div>
+				<div class="film-item"><img class="film-thumb" src="img/films/21jumpstreet.jpg">
+					<div class="film-desc">
+						<div class="film-name">21 Jump Street</div>
+						<div class="film-tag"><b>Tags</b>: Fantasy, Animation</div>
+						<div class="love-icon"><img onclick="loved(this)" src="img/like.png"></div>
+					</div>
+				</div>
+				<div class="film-item"><img class="film-thumb" src="img/films/21jumpstreet.jpg">
+					<div class="film-desc">
+						<div class="film-name">21 Jump Street</div>
+						<div class="film-tag"><b>Tags</b>: Fantasy, Animation</div>
+						<div class="love-icon"><img onclick="loved(this)" src="img/like.png"></div>
+					</div>
+				</div>
+				<div class="film-item"><img class="film-thumb" src="img/films/21jumpstreet.jpg">
+					<div class="film-desc">
+						<div class="film-name">21 Jump Street</div>
+						<div class="film-tag"><b>Tags</b>: Fantasy, Animation</div>
+						<div class="love-icon"><img onclick="loved(this)" src="img/like.png"></div>
+					</div>
+				</div>
+				<div class="film-item"><img class="film-thumb" src="img/films/21jumpstreet.jpg">
+					<div class="film-desc">
+						<div class="film-name">21 Jump Street</div>
+						<div class="film-tag"><b>Tags</b>: Fantasy, Animation</div>
+						<div class="love-icon"><img onclick="loved(this)" src="img/like.png"></div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</body>
+<script defer="defer" src="js/greetchange.js"></script>
+<script defer="defer" src="js/lovedfilm.js"></script>
+</html>

@@ -1,0 +1,102 @@
+.navbar-container {
+	position: fixed;
+	background-color: #272727;
+	width: 100%;
+	box-shadow: 0px 2px 4px 1px rgba(0,0,0,0.15);
+}
+
+
+.navbar-inner {
+	margin: auto;
+	background-color: #272727;
+	height: 100%;
+	width: 90%;
+}
+
+.navbar-buttons {
+	margin: 0 19% 0 0;
+	padding-top: 27px;
+	display: inline-block;
+	float: right;
+}
+
+.navbar-buttons a {
+	font-family: Roboto;
+	color: white;
+}
+
+.navbar-buttons > li::after {
+	position: absolute;
+	content: "";
+	height: 2px;
+	width: 0%;
+	left: -10px;
+	bottom: -10px;
+	background-color: #0247FE;
+	transition: 0.3s;
+}
+
+.navbar-buttons > li:hover::after {
+	width: calc(100% + 20px);
+}
+
+.navbar-buttons > li {
+	position: relative;
+	display: inline-block;
+	list-style-type: none;
+	margin-left: 60px;
+}
+
+.navbar-button {
+	text-decoration: none;
+	color: black;
+}
+
+.page-logo{
+	padding: 10px 0 10px 0;
+	display: inline-block;
+	margin: 0;
+}
+
+
+.login-section {
+	padding-top: 17px;
+	float: right;
+}
+
+.login-section > button {
+	margin-left: 5px;
+	padding: 10px 25px 10px 25px;
+	background-color: #0247FE;
+	color: white;
+	border: 1px solid blue;
+	border-radius: 5px;
+	font-family: Roboto;
+	font-weight: 500;
+	font-size: 14 px;
+	transition: 0.2s;
+}
+
+.login-section > button:hover {
+	cursor: pointer;
+	background-color: #272727;
+	border: 1px solid white;
+	color: white;
+	transform: scale(1.1);
+}
+
+.login-section > button:nth-child(odd) {
+	padding: 10px 25px 10px 25px;
+	color: white;
+	background-color: #272727;
+	border: 1px solid white;
+	border-radius: 5px;
+}
+
+
+.login-section > button:nth-child(odd):hover {
+	padding: 10px 25px 10px 25px;
+	color: white;
+	background-color: #0247FE;
+	border-radius: 5px;
+}
