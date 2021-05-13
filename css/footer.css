@@ -1,4 +1,31 @@
 .ftr-container {
-    background-color: blue;
+    position: relative;
+    background-color: #272727;
     height: 100px;
+    text-align: center;
+    border-top: 1px solid grey;
+}
+
+.ftr-container p {
+    position: relative;
+    z-index: 1;
+    margin: 0;
+    font-family: Roboto, sans-serif;
+    font-size: 14px;
+    font-weight: 500;
+    color: white;
+}
+
+.ftr-divider {
+    padding-top: 20px;
+}
+
+
+.social-container {
+    position: absolute;
+    display: inline-block;
+    height: 100%; 
+    width:500px;
+    right: 0;
+    top: 0;
 }
