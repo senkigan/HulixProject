@@ -115,7 +115,7 @@ header {
 	z-index: 10;
 	width: 24px;
 	height: 24px;
-	transition: 0.5s;
+	transition: 0.3s ease-in-out;
 }
 
 .love-icon img:hover {
