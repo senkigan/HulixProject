@@ -1,6 +1,5 @@
-const greets = ["What are you watching today?"
-, "Found anything interesting?", "Handpicked just for you"
-, "What do you feel like watching?"];
+const greets = ["WHAT ARE YOU WATCHING TODAY?"
+, "FOUND ANYTHING INTERESTING?", "WHAT DO YOU FEEL LIKE WATCHING?"];
 
 const randomize = Math.floor(Math.random() * greets.length);
 

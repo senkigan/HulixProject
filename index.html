@@ -31,12 +31,45 @@
 		<header>
 			<h1 id="heading"></h1>
 		</header>
+		<div onclick="expandBar(this)" class="search-container">
+			<img id="search-icon" src="img/loupe.png">
+			<input placeholder="Search film..." id="search-bar" type="text" name="search">
+		</div>
+		
 		<div class="films-container">
 			<div class="film-grid">
 				<div class="film-item"><img class="film-thumb" src="img/films/avatar.jpg">
 					<div class="film-desc">
 						<div class="film-name">Avatar</div>
 						<div class="film-tag"><b>Tags</b>: Fantasy, Thriller</div>
+						<div class="love-icon"><img onclick="loved(this)" src="img/like.png"></div>
+					</div>
+				</div>
+				<div class="film-item"><img class="film-thumb" src="img/films/starwarstfa.jpg">
+					<div class="film-desc">
+						<div class="film-name">Star Wars: TFA</div>
+						<div class="film-tag"><b>Tags</b>: Action, Fantasy</div>
+						<div class="love-icon"><img onclick="loved(this)" src="img/like.png"></div>
+					</div>
+				</div>
+				<div class="film-item"><img class="film-thumb" src="img/films/kong.jpg">
+					<div class="film-desc">
+						<div class="film-name">Godzilla vs Kong</div>
+						<div class="film-tag"><b>Tags</b>: Action, Fantasy</div>
+						<div class="love-icon"><img onclick="loved(this)" src="img/like.png"></div>
+					</div>
+				</div>
+				<div class="film-item"><img class="film-thumb" src="img/films/mugentrain.jpg">
+					<div class="film-desc">
+						<div class="film-name">Demon Slayer: Mugen train</div>
+						<div class="film-tag"><b>Tags</b>: Anime, Fantasy</div>
+						<div class="love-icon"><img onclick="loved(this)" src="img/like.png"></div>
+					</div>
+				</div>
+				<div class="film-item"><img class="film-thumb" src="img/films/howtotrain.jpg">
+					<div class="film-desc">
+						<div class="film-name">How To Train Your Dragon</div>
+						<div class="film-tag"><b>Tags</b>: Adventure, Fantasy</div>
 						<div class="love-icon"><img onclick="loved(this)" src="img/like.png"></div>
 					</div>
 				</div>
@@ -75,27 +108,6 @@
 						<div class="love-icon"><img onclick="loved(this)" src="img/like.png"></div>
 					</div>
 				</div>
-				<div class="film-item"><img class="film-thumb" src="img/films/starwarstfa.jpg">
-					<div class="film-desc">
-						<div class="film-name">Star Wars: TFA</div>
-						<div class="film-tag"><b>Tags</b>: Action, Fantasy</div>
-						<div class="love-icon"><img onclick="loved(this)" src="img/like.png"></div>
-					</div>
-				</div>
-				<div class="film-item"><img class="film-thumb" src="img/films/kong.jpg">
-					<div class="film-desc">
-						<div class="film-name">Godzilla vs Kong</div>
-						<div class="film-tag"><b>Tags</b>: Action, Fantasy</div>
-						<div class="love-icon"><img onclick="loved(this)" src="img/like.png"></div>
-					</div>
-				</div>
-				<div class="film-item"><img class="film-thumb" src="img/films/mugentrain.jpg">
-					<div class="film-desc">
-						<div class="film-name">Demon Slayer: Mugen train</div>
-						<div class="film-tag"><b>Tags</b>: Anime, Fantasy</div>
-						<div class="love-icon"><img onclick="loved(this)" src="img/like.png"></div>
-					</div>
-				</div>
 				<div class="film-item"><img class="film-thumb" src="img/films/polter.jpg">
 					<div class="film-desc">
 						<div class="film-name">Poltergeist</div>
@@ -107,13 +119,6 @@
 					<div class="film-desc">
 						<div class="film-name">Cover</div>
 						<div class="film-tag"><b>Tags</b>: Thriller, Psychological</div>
-						<div class="love-icon"><img onclick="loved(this)" src="img/like.png"></div>
-					</div>
-				</div>
-				<div class="film-item"><img class="film-thumb" src="img/films/howtotrain.jpg">
-					<div class="film-desc">
-						<div class="film-name">How To Train Your Dragon</div>
-						<div class="film-tag"><b>Tags</b>: Adventure, Fantasy</div>
 						<div class="love-icon"><img onclick="loved(this)" src="img/like.png"></div>
 					</div>
 				</div>
@@ -183,12 +188,16 @@
 			<p style="padding-bottom: 20px; font-size: 12px;">This site uses biscuits to deliver services in accordance with this Privacy Policy.</p>
 			<p>Copyright &copy 2021 Hulix Inc. All right reserved.</p>
 			<div class="social-container">
-			
+				<a href="https://web.facebook.com/" target="_blank"><img class="social-icon" src="img/facebook.png"></a>
+				<a href="https://instagram.com/" target="_blank"><img class="social-icon" src="img/instagram.png"></a>
+				<a href="https://twitter.com/" target="_blank"><img class="social-icon" src="img/twitter.png"></a>
+				<a href="https://linkedin.com/" target="_blank"><img class="social-icon" src="img/linkedin.png"></a>
 			</div>
 		</div>
 		
 	</footer>
 </body>
 <script defer="defer" src="js/greetchange.js"></script>
+<script defer="defer" src="js/expandsearch.js"></script>
 <script defer="defer" src="js/lovedfilm.js"></script>
 </html>
