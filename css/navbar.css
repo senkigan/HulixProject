@@ -1,5 +1,6 @@
 .navbar-container {
 	position: fixed;
+	z-index: 5;
 	background-color: #272727;
 	width: 100%;
 	box-shadow: 0px 2px 4px 1px rgba(0,0,0,0.15);
@@ -16,13 +17,13 @@
 .navbar-buttons {
 	margin: 0 19% 0 0;
 	padding-top: 27px;
-	display: inline-block;
 	float: right;
 }
 
 .navbar-buttons a {
 	font-family: Roboto;
 	color: white;
+	text-decoration: none;
 }
 
 .navbar-buttons > li::after {
@@ -47,10 +48,6 @@
 	margin-left: 60px;
 }
 
-.navbar-button {
-	text-decoration: none;
-	color: black;
-}
 
 .page-logo{
 	padding: 10px 0 10px 0;
@@ -73,8 +70,8 @@
 	border-radius: 5px;
 	font-family: Roboto;
 	font-weight: 500;
-	font-size: 14 px;
-	transition: 0.2s;
+	font-size: 13px;
+	transition: background-color, transform 0.2s;
 }
 
 .login-section > button:hover {
@@ -100,3 +97,46 @@
 	background-color: #0247FE;
 	border-radius: 5px;
 }
+
+
+/* Search Bar section */
+
+.search-container {
+	display: flex;
+	position: absolute;
+	top: 105px;
+	left: 50px;
+	align-items: center;
+	transition: left 0.7s;
+}
+
+
+#search-bar {
+	margin: 0;
+	height: 25px;
+	width: 140px;
+	padding: 0px 15px 0 36px;
+	border: 2px solid #4169E1;
+	background-color: #272727;
+	color: white;
+	border-radius: 20px 20px 20px 20px;
+	outline: none !important;
+	font-size: 16px;
+	font-family: 'Montserrat', sans-serif;
+	transition: width 0.7s;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	white-space: nowrap;
+}
+
+#search-bar:focus {
+	width: 200px;
+}
+
+#search-icon {
+	position: absolute;
+	width: 20px;
+	height: 20px;
+	left: 10px;
+}
+
